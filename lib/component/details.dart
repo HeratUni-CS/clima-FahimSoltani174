@@ -1,0 +1,45 @@
+
+import 'package:clima/utilities/constants.dart';
+import 'package:flutter/material.dart';
+
+
+
+// The deatails of each Part
+class Details extends StatelessWidget {
+
+  final String title,value;
+  const Details({required this.title,required this.value});
+
+
+
+  @override
+  Widget build(BuildContext context) {
+    return  Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.baseline,
+          textBaseline: TextBaseline.alphabetic,
+          children: [
+            Text(
+              value,
+              style: kDetailsTextStyle,
+            ),
+            Visibility(
+              visible: title =='WIND' ? true : false ,
+              child: Text(
+                'km/hr',
+                style: kDetailsSuffixTextStyle,
+              ),
+            ),
+          ],
+        ),
+
+        Text(
+          title,
+          style: kDetailsTitleTextStyle,
+        ),
+      ],
+    );
+  }
+}

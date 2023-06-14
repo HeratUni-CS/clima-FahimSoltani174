@@ -1,3 +1,5 @@
+
+// Some condation for wether
 class WeatherModel {
   String getWeatherIcon(int condition) {
     if (condition < 300) {
