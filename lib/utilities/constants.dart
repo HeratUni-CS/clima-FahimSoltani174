@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 
 // Adding some constant variables for Special Colors
-const kApiKey = 'f669ffef321c0f3cf928deb7a7a4164a';
+const kApiKey = 'e72ca729af228beabd5d20e3b7749712';
 const kLightColor = Colors.white;
 const kMidLightColor = Colors.white60;
 const kOverlayColor = Color.fromRGBO(255, 255, 255, 0.102);
